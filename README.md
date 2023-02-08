@@ -1,14 +1,65 @@
-# loan_calculator
-THis is a simple loan calculator with Malaysia central-bank overnight interest rate
+### Accrue.js
 
-It is using JavaScript and accrue.js package to done 
+A loan and interest calculation plugin for jQuery.
 
-This is a simple table that you can create using html with sql database at the backend(Did not include in code)
-![image](https://user-images.githubusercontent.com/87265327/217526964-df19ee13-2416-459f-99b9-523a84edeede.png)
+#### [View Demo](http://jpederson.com/Accrue.js/)
+#### [Documentation](https://github.com/jpederson/Accrue.js/wiki)
+
+*****
+
+![Available on Github](https://img.shields.io/github/release/jpederson/Accrue.js.svg) ![Available on NPM](https://img.shields.io/npm/v/accrue.svg) ![MIT](https://img.shields.io/github/license/jpederson/Accrue.js.svg)
+
+*****
+
+![preview](example.gif)
 
 
-![image](https://user-images.githubusercontent.com/87265327/217527095-3cb5d795-c6fc-4b6d-b74f-9b8ae81ad967.png)
+*****
 
-![image](https://user-images.githubusercontent.com/87265327/217527246-e11ed303-5b6d-49e1-8247-b9dcf3872a83.png)
+### Install
 
-![image](https://user-images.githubusercontent.com/87265327/217527276-8c0accd2-07e2-419d-883d-e39658134e07.png)
+#### Via Github
+
+```
+git clone git@github.com:jpederson/Accrue.js.git accrue.js
+```
+
+#### Via NPM
+
+```
+npm install accrue
+```
+
+#### Via Yarn
+
+```
+yarn install accrue
+```
+
+*****
+
+### Quick Start
+
+For the most basic usage of the plugin, all you need is the code below. Of course, you may need to adjust src properties based on where you store files, and you'll want to add styles - but the core functionality will be there.
+
+```html
+<div class="calculator"></div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="jquery.accrue.min.js"></script>
+<script>
+$(document).ready(function(){
+	$(".calculator").accrue();
+});
+</script>
+```
+
+Find out more about how to use Accrue.js in the [wiki](https://github.com/jpederson/Accrue.js/wiki)
+
+*****
+
+### Contributing
+
+To contribute, you'll need [nodejs](https://nodejs.org) and [Grunt](https://gruntjs.com/) installed. Fork and clone the repo, then visit the directory in the terminal and type `npm install`. After that you can simply run the `grunt` command to watch the files in the project. It'll automatically lint, test, compile, and minify the plugin files so you can just code.
+
+![Built with Grunt](https://img.shields.io/badge/built%20with-grunt-orange.svg)
+
