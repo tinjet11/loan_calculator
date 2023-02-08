@@ -14,47 +14,6 @@
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 <div id="container">
-
-    <div id="container">
-        <div class="table-responsive-md mx-auto col-10">
-            <table class="table table-bordered table-dark">
-                <thead>
-                    <tr>
-                        <th scope="col">Bank</th>
-                        <th scope="col">Interest Rate</th>
-                        <th scope="col">Last Update Since</th>
-                    </tr>
-                </thead>
-                
-                <tbody>
-                    <?php
-                    require_once("include/db.php");
-                    global $ConnectingDB;
-                    $sql = "SELECT bank,image,rate,date  FROM bank_interest";
-                    $stmt = $ConnectingDB->query($sql);
-                    while ($DataRows = $stmt->fetch()) {
-
-                        $Bank = $DataRows["bank"];
-                        $Image = $DataRows["image"];
-                        $Rate = $DataRows["rate"];
-                        $Date = $DataRows["date"];
-
-                    ?>
-                        <tr>
-                            <!-- change to the file where you put image -->
-                            <th scope="col"><img class="mw-100 mh-100" src="upload/<?php echo $Image ?>">
-                            
-                                <p><?php echo $Bank ?></p>
-                            </th>
-                            <th scope="col"><?php echo $Rate ?></th>
-                            <th scope="col"><?php echo $Date ?></th>
-                        </tr>
-                    <?php } ?>
-                </tbody>
-                
-            </table>
-        </div>
-    </div>
     <div class="block grey-lighter">
         <div class="wrap">
             <figure class="chart-figure" style="float: right;">
