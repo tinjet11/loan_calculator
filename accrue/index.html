@@ -1,0 +1,245 @@
+<!doctype html>
+<title>Accrue.js - A Loan and Interest Calculation Plugin for jQuery</title>
+<meta name="viewport" content="width=device-width">
+<link href="example.css" rel="stylesheet" type="text/css">
+
+<div id="container">
+
+	<div class="header">
+		<div class="wrap">
+			<h1>Accrue.js</h1>
+			<h3>A loan and interest calculation plugin for jQuery.</h3>
+			<p class="buttons"><a href="#about" class="btn">About</a> <a href="#demos" class="btn">Demos</a> <a href="#documentation" class="btn">Documentation</a> <a href="#download" class="blue-dark btn">Download</a></p>
+		</div>
+	</div>
+
+	<a name="about"></a>
+	<div class="block grey-light">
+		<div class="wrap">
+
+			<h1>What is it?</h1>
+			<p class="lead">Accrue.js is a jQuery plugin for providing loan and interest calculations on web pages. It's small, fast, flexible, and forgiving.</p>
+			<div class="pad">
+				<p><strong>Small:</strong> The minified version of the plugin is under 5kb.</p>
+				<p><strong>Fast:</strong> It loads and executes quickly, and instantly provides results as your user types.</p>
+				<p><strong>Flexible:</strong> Don't want it to calculate on keyup? There's a setting for that. Want to execute your own code every time the the tool calculates? Just provide a callback function. With every setting in the plugin accessible, you can completely customize the experience.</p>
+				<p><strong>Forgiving:</strong> If you don't provide it with fields that are required to perform calculations, it will add them to the bottom of the form. If you don't provide it with a form or results div to begin with, you guessed it - it creates them. It will operate when trained on a completely empty div or use any fields you provide yourself.</p>
+			</div>
+			<p>Check out the <a href="#demos">demos</a> to see what it can do.</p>
+
+		</div>
+	</div>
+
+
+	<a name="demos"></a>
+	<div class="block grey">
+		<div class="wrap">
+
+			<h1>Demos</h1>
+			<p>Enough talk, let's check out some demos!</p>
+
+		</div>
+	</div>
+
+	<div class="block grey-lighter">
+		<div class="wrap">
+
+			<h2>Basic Loan Calculation</h2>
+
+			<div class="fourty">
+				<p>Grabs three values from the form, and returns general information about a loan.</p>
+				<script src="https://gist.github.com/jpederson/9497808.js"></script>
+			</div>
+
+			<div class="calculator-loan">
+				<div class="thirty form">
+
+				</div>
+
+				<div class="thirty">
+					<p><label>Results:</label></p>
+					<div class="results"></div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+		</div>
+	</div>
+
+	<div class="block grey-light">
+		<div class="wrap">
+
+			<h2>Interest Savings Calculation</h2>
+
+			<div class="fourty">
+				<p>Grabs four values from the form, and returns general information about a loan.</p>
+				<script src="https://gist.github.com/jpederson/9497819.js"></script>
+			</div>
+
+			<div class="calculator-compare">
+				<div class="thirty form">
+
+				</div>
+
+				<div class="thirty">
+					<p><label>Results:</label></p>
+					<div class="results"></div>
+				</div>
+
+				<div class="clear"></div>
+			</div>
+
+
+		</div>
+	</div>
+
+	<div class="block grey-lighter">
+		<div class="wrap">
+
+			<h2>Amortization Schedule Calculation</h2>
+
+			<div class="fifty">
+				<p>Grabs three values from the form, and displays a complete amortization schedule for the provided loan information.</p>
+			</div>
+
+			<div class="fifty">
+				<script src="https://gist.github.com/jpederson/9497832.js"></script>
+			</div>
+
+			<div class="calculator-amortization">
+				<div class="thirty form">
+
+				</div>
+
+				<div class="seventy">
+					<p><label>Results:</label></p>
+					<div class="results"></div>
+				</div>
+
+				<div class="clear"></div>
+			</div>
+
+
+		</div>
+	</div>
+
+	<a name="documentation"></a>
+	<div class="block grey-light">
+		<div class="wrap">
+
+			<h1 class="phone-only">Docs</h1>
+			<h1 class="non-phone-only">Documentation</h1>
+			<p>Accrue.js is a jQuery plugin, so it requires a version of jQuery to be installed. The only other file you need to get started is <code>jquery.accrue.min.js</code>.</p>
+
+			<hr>
+
+			<div class="fifty">
+				<h3>Requirements</h3>
+				<ul>
+					<li>jQuery 1.10+ (and legacy 1.4.0+) - <a href="https://code.jquery.com" target="_blank">Recommend Latest</a></li>
+					<li>A bit of CSS knowledge couldn't hurt.</li>
+				</ul>
+			</div>
+
+			<div class="fifty">
+				<h3>A Note About Styles</h3>
+				<p>The <code>example.css</code> file that's included in the repo is <strong>NOT</strong> intended to be used with the plugin - it mainly contains styles for the example page, and while some of those styles affect the calculator elements, most of them do not and would just add unnecessary code to your codebase.</p>
+				<p>To keep the plugin small and flexible, it doesn't include a stylesheet at all, allowing you to set any styles you need/want.</p>
+			</div>
+
+			<div class="clear"></div>
+			<hr>
+
+			<h3>The HTML</h3>
+			<p>There are a ton of <a href="https://github.com/jpederson/Accrue.js/wiki/Plugin-Options">plugin options</a> and ways to <a href="https://github.com/jpederson/Accrue.js/wiki/Customizing-Fields">customize</a> your calculators, but for this chunk of code, we'll just focus on the bare minimum of what you need to start seeing a working calculator:</p>
+			<script src="https://gist.github.com/jpederson/9497206.js"></script>
+
+			<hr>
+
+			<h3>More Documentation</h3>
+			<p>View the <a href="https://github.com/jpederson/Accrue.js/wiki">wiki</a> for detailed instructions about any of the calculator modes and all the additional options and features.</p>
+			<p class="buttons"><a href="https://github.com/jpederson/Accrue.js/wiki" target="_blank" class="btn">View the Wiki</a></p>
+
+		</div>
+	</div>
+
+	<div class="block grey" id="download">
+		<div class="wrap">
+
+			<h2>Download Accrue.js</h2>
+			<p>Visit the project on Github for updates or just download the source and dig in!</p>
+			<p class="buttons"><a href="https://github.com/jpederson/Accrue.js/" target="_blank" class="btn">Accrue.js on Github</a> <a href="https://github.com/jpederson/Accrue.js/archive/gh-pages.zip" target="_blank" class="btn blue">Download Latest</a></p>
+
+			<div class="clear"></div>
+
+		</div>
+	</div>
+
+	<div class="block blue footer">
+		<div class="wrap">
+			<h2>About the Author</h2>
+			<div class="fifty">
+				<p>Built with care for <strong>free</strong> by me, <a href="https://jpederson.com" target="_blank">James Pederson</a>.</p>
+				<p>I'm a web developer and credit union advocate from Madison, WI. I'm also available for hire, <a href="https://jpederson.com/">get in touch</a> so we can discuss your project.</p>
+			</div>
+			<div class="fifty">
+				<p>Did my script help you? Buy me a beer to show me some love!</p>
+				<p>
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+					<input type="hidden" name="cmd" value="_s-xclick">
+					<input type="hidden" name="hosted_button_id" value="BNAQJ6MC449RQ">
+					<input type="submit" name="submit" value="Donate" class="btn">
+					<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+					</form>
+				</p>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+</div>
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="jquery.accrue.min.js"></script>
+<script>
+
+
+// start accrue.js
+$(document).ready(function(){
+
+	// set up normal loan calculation
+	$(".calculator-loan").accrue();
+
+
+	// set up the comparison calculator form.
+	$(".calculator-compare").accrue({
+		mode: "compare"
+	});
+
+
+	// set up the amortization schedule calculator
+	$(".calculator-amortization").accrue({
+		mode: "amortization"
+	});
+
+});
+
+
+// ------------------------------------------------
+// none of the code below is required for accrue.js
+// ------------------------------------------------
+
+// smooth scrollin'
+$(function(){var a=function(a){var b=$("a[name='"+a+"']");"undefined"==typeof b.offset()&&(b=$("#"+a)),"undefined"!=typeof b.offset()&&$("html, body").animate({scrollTop:b.offset().top},1e3)};$("a").click(function(b){if($(this).attr("href").match("#")){b.preventDefault();var c=$(this).attr("href").replace("#","");a(c)}})});
+
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-614793-2"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-614793-2');
+</script>
